@@ -1,0 +1,4 @@
+interface:
+  display_name: "How To Explain"
+  short_description: "Explain with audience-aware depth"
+  default_prompt: "Use $how-to-explain to explain this concept with a goal-driven journey."

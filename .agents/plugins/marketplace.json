@@ -1,0 +1,20 @@
+{
+  "name": "how-to-explain-marketplace",
+  "interface": {
+    "displayName": "How To Explain"
+  },
+  "plugins": [
+    {
+      "name": "how-to-explain",
+      "source": {
+        "source": "local",
+        "path": "./plugins/how-to-explain"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Productivity"
+    }
+  ]
+}

@@ -1,0 +1,41 @@
+{
+  "name": "how-to-explain",
+  "version": "0.1.0",
+  "description": "Audience-aware explanation craft for Codex, with optional Notion grounding through a Tools database.",
+  "author": {
+    "name": "Local Codex User",
+    "email": "",
+    "url": ""
+  },
+  "homepage": "./README.md",
+  "repository": "",
+  "license": "MIT",
+  "keywords": [
+    "explanation",
+    "notion",
+    "user-model",
+    "teaching",
+    "codex-skill"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "How To Explain",
+    "shortDescription": "Explain with audience-aware depth.",
+    "longDescription": "Turns facts, code, systems, philosophy, debugging results, and technical decisions into goal-driven explanations. For full behavior, this plugin expects a Notion database named Tools with a User Preferences page and inheritance properties documented in docs/tools-db-dependency.md. Without Notion access, the skill falls back to local reference files.",
+    "developerName": "Local Codex User",
+    "category": "Productivity",
+    "capabilities": [
+      "Interactive",
+      "Notion"
+    ],
+    "websiteURL": "",
+    "privacyPolicyURL": "",
+    "termsOfServiceURL": "",
+    "defaultPrompt": [
+      "Use how-to-explain to explain this concept.",
+      "Explain why this failed and what model fixes it.",
+      "Compare these ideas with a clear mental model."
+    ],
+    "brandColor": "#3B82F6"
+  }
+}
