@@ -9,7 +9,7 @@ This repository is a Codex plugin marketplace containing the `how-to-explain` pl
 Add this marketplace to Codex:
 
 ```bash
-codex plugin marketplace add RPD123-byte/how-to-explain-marketplace
+codex marketplace add RPD123-byte/how-to-explain-marketplace
 ```
 
 Then restart Codex if the marketplace does not appear immediately, open the plugin marketplace, and install or enable `how-to-explain`.
@@ -53,4 +53,3 @@ plugins/how-to-explain/.codex-plugin/plugin.json
 plugins/how-to-explain/skills/how-to-explain/SKILL.md
 plugins/how-to-explain/docs/tools-db-dependency.md
 ```
-

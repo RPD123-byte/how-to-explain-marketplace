@@ -25,7 +25,7 @@ This plugin is published through the marketplace repository that contains this f
 The native Codex install path is:
 
 ```bash
-codex plugin marketplace add RPD123-byte/how-to-explain-marketplace
+codex marketplace add RPD123-byte/how-to-explain-marketplace
 ```
 
 If recipients only receive this plugin folder directly, they can place it under their own marketplace root at `plugins/how-to-explain`, then add a marketplace entry like:
