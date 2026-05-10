@@ -71,7 +71,17 @@ Do not simply repeat the prior answer with more detail.
 
 When the user gives preference feedback, reveals a forgotten concept, corrects an explanation path, or provides a durable self-model, consider updating Notion.
 
-Use the `User Preferences` page for high-level preferences and pointers to lower-level material. Put durable substance in page content rather than metadata fields.
+Use the `User Preferences` page only as an explanation-behavior index and retrieval anchor. Do not create child pages under it for newly captured domain details, conceptual notes, or conversation summaries.
+
+Use `User Preferences` itself only when the update is actually a durable preference about how Codex should explain, collaborate, retrieve context, or update Notion in the future. Put durable preference substance in page content rather than metadata fields.
+
+For newly captured knowledge, choose the destination by ontology:
+
+- Put structured operational knowledge into the appropriate Ontology database, such as Tools, Anti-Patterns, or Constraints.
+- Put general conceptual information into the relevant existing knowledge page outside the Ontology databases, preferably by updating the appropriate section instead of creating a disconnected page.
+- If the content is too large to inline cleanly, create or move a child page under the relevant knowledge page and add a short pointer from the parent section.
+
+Example: if the user teaches or clarifies information about LLM reinforcement learning, add it to the `AI and Agents` page in the Reinforcement Learning section, rather than placing it under `User Preferences`.
 
 When adding AI-authored text to non-database page content, prefix the section with `AI:` and wrap AI-authored text in square brackets. If AI-authored text is inserted in multiple places in one paragraph, wrap each insertion independently.
 

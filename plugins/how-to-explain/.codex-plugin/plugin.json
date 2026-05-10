@@ -1,6 +1,6 @@
 {
   "name": "how-to-explain",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Audience-aware explanation craft for Codex, with optional Notion grounding through a Tools database.",
   "author": {
     "name": "Local Codex User",
