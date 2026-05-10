@@ -11,11 +11,15 @@ Explain to create usable understanding, not to dump facts.
 
 A good explanation is goal-driven communication that moves the explainee from their current knowledge and emotional state to the smallest sufficient target understanding. Treat the explanation as a journey: choose a destination, map the gap, walk the path in order, and keep enough landmarks alive that the user can retain and reuse the idea.
 
+Part of taking the user through the journey is anticipatory explanation. Predict the questions, objections, and confusions the user is likely to ask next, then answer the important ones before they ask. Place those answers where the questions naturally arise so the explanation feels like one continuous path rather than a sequence of repairs.
+
 ## Before Explaining
 
 Infer the user's current state from the prompt, prior thread, codebase context, and Notion. If the explanation is non-trivial, personalized, conceptual, or likely to benefit from anchors the user already has, search Notion before answering.
 
 Start from the Tools DB page `User Preferences` when available. Plugin users should replace this with their own page URL after recreating the database documented in `../../docs/tools-db-dependency.md`: `https://www.notion.so/34ded17cd10981f5a1edf4db91be6a3d`. Treat it as the high-level preference index, then search for the target concept and adjacent concepts the user may already know. If Notion tools are unavailable, say so briefly and use `references/user-profile.md` plus the live thread.
+
+Before any non-trivial explanation, read `references/user-profile.md` and `references/explanation-patterns.md`. These are not optional fallback files: `user-profile.md` provides retrieval anchors and explanation constraints even when Notion is available, and `explanation-patterns.md` supplies the routes and anti-patterns that keep explanations from becoming fact stacks. Skipping these files is acceptable only for tiny factual answers where no teaching journey is being attempted.
 
 Choose an explanation goal before answering:
 
@@ -47,12 +51,15 @@ Use this sequence unless the user asks for a different format:
 1. Name the point of the explanation in one sentence.
 2. Identify the user's likely existing anchor.
 3. Show the missing bridge between the anchor and the target idea.
-4. Explain the mechanism in ordered steps.
-5. Compare and contrast with a nearby familiar model.
-6. Surface the important caveats or places people get misled.
-7. Compress the explanation into a reusable mental model.
+4. Predict the next questions the user will ask if the bridge is incomplete, and answer the important ones inline.
+5. Explain the mechanism in ordered steps.
+6. Compare and contrast with a nearby familiar model.
+7. Surface the important caveats or places people get misled.
+8. Compress the explanation into a reusable mental model.
 
 Prefer one deep, coherent line over many shallow facts. If the topic is broad, explicitly choose the line of explanation that best serves the user's goal.
+
+Do not leave obvious next questions as dangling future work. If a reasonable reader with this user's profile would ask "but how exactly?", "what starts it?", "where does this run?", "what changes in the concrete artifact?", or "what is the caveat?", answer it proactively.
 
 ## Handle Confusion
 
@@ -120,5 +127,6 @@ Avoid:
 
 ## References
 
-- Read `references/user-profile.md` when Notion tools are unavailable or when needing local Notion workflow reminders.
-- Read `references/explanation-patterns.md` for concrete patterns and anti-patterns.
+- For every non-trivial explanation, read `references/user-profile.md` before answering. Use it even when Notion is available because it names retrieval anchors and local workflow reminders.
+- For every non-trivial explanation, read `references/explanation-patterns.md` before answering. Choose an explanation pattern deliberately and avoid named anti-patterns.
+- Only skip these files for tiny direct factual answers where the user is not asking for a model, teaching, comparison, diagnosis, or decision support.
